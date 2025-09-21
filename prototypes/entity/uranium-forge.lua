@@ -35,7 +35,7 @@ data:extend({ {
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     module_slots = 4,
     allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
-    crafting_categories = { "centrifuging", "uranium-overhaul-uranium-forging" },
+    crafting_categories = { "centrifuging", "uranium-overhaul-uranium-forging", "uranium-overhaul-uranium-forging-or-crafting" },
     crafting_speed = 2.0,
     energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_second = 6 },
     energy_usage = "1MW",

@@ -25,3 +25,24 @@ end
 data.raw["recipe"]["uranium-fuel-cell"].results = {
     { type = "item", name = "uranium-fuel-cell", amount = 1 },
 }
+
+-- This moves the uranium fuel cell recipe to the "centrifuging" category
+data.raw["recipe"]["uranium-fuel-cell"].category = "centrifuging"
+
+-- This adds new recipes to hand-crafting and assembling machines
+-- data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories
+table.insert(
+    data.raw.character.character.crafting_categories,
+    "uranium-overhaul-uranium-forging-or-crafting"
+)
+table.insert(
+    data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories,
+    "uranium-overhaul-uranium-forging-or-crafting"
+)
+table.insert(
+    data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories,
+    "uranium-overhaul-uranium-forging-or-crafting"
+)
+
+-- data.raw.character.character.crafting_categories = {"crafting", "electronics", "pressing", "recycling-or-hand-crafting", "organic-or-hand-crafting", "organic-or-assembling"}
+-- data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories = {"basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid", "electronics", "electronics-with-fluid", "pressing", "metallurgy-or-assembling", "organic-or-hand-crafting", "organic-or-assembling", "electronics-or-assembling", "cryogenics-or-assembling", "crafting-with-fluid-or-metallurgy"}
