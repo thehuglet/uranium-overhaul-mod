@@ -5,6 +5,7 @@ require("prototypes.recipe")
 require("prototypes.entity.uranium-forge")
 require("prototypes.entity.nuclear-lab-eei")
 require("prototypes.entity.nuclear-lab")
+require("prototypes.technology")
 
 local lab = data.raw["lab"]["uranium-expanded-nuclear-lab"]
 if lab then
