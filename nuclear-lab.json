@@ -1,0 +1,78 @@
+{
+  "tile_width": 5,
+  "tile_height": 5,
+  "graphics_set": {
+    "animation": {
+      "layers": [
+        {
+          "scale": 0.4,
+          "filenames": [
+            "chemical-stager-hr-animation-1.png"
+          ],
+          "blend_mode": "normal",
+          "width": 400,
+          "height": 400,
+          "shift": {
+            "x": 0,
+            "y": 0
+          },
+          "line_length": 8,
+          "lines_per_file": 8,
+          "frame_count": 60,
+          "tint": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "scale": 0.4,
+          "filenames": [
+            "chemical-stager-hr-emission-1.png"
+          ],
+          "blend_mode": "additive-soft",
+          "width": 400,
+          "height": 400,
+          "shift": {
+            "x": 0,
+            "y": 0
+          },
+          "line_length": 8,
+          "lines_per_file": 8,
+          "frame_count": 60,
+          "tint": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "draw_as_glow": true
+        },
+        {
+          "scale": 0.4,
+          "filenames": [
+            "chemical-stager-hr-shadow.png"
+          ],
+          "blend_mode": "normal",
+          "width": 800,
+          "height": 600,
+          "shift": {
+            "x": 0,
+            "y": 0
+          },
+          "line_length": 1,
+          "lines_per_file": 1,
+          "frame_count": 1,
+          "tint": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "draw_as_shadow": true
+        }
+      ]
+    }
+  }
+}

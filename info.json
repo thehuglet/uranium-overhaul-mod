@@ -1,0 +1,9 @@
+{
+    "name": "uranium-expanded",
+    "title": "Uranium Expanded",
+    "description": "This mod expands upon the current uranium processes.",
+    "version": "0.1.0",
+    "author": "thehuglet",
+    "factorio_version": "2.0",
+    "dependencies": ["base >= 2.0", "space-age >= 2.0.0"]
+}
