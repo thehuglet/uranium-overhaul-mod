@@ -74,8 +74,8 @@ script.on_event(defines.events.on_tick, function(event)
         local catalyst_is_in_inventory = not data.lab.burner.inventory.is_empty()
         local catalyst_is_burning = data.lab.burner.remaining_burning_fuel > 0
 
-        local is_state_no_power = data.eei.is_connected_to_electric_network()
-        local is_state_missing_catalyst = catalyst_is_in_inventory or catalyst_is_burning
+        local is_state_no_power = not data.eei.is_connected_to_electric_network()
+        local is_state_missing_catalyst = not (catalyst_is_in_inventory or catalyst_is_burning)
         local is_state_low_power = data.eei.energy < data.eei.electric_buffer_size
 
         -- The order of the if-else chain here is
@@ -100,7 +100,7 @@ script.on_event(defines.events.on_tick, function(event)
 
             data.lab.custom_status = {
                 diode = defines.entity_status_diode.red,
-                label = { "entity-status.missing-uranium-catalyst" }
+                label = { "entity-status.uranium-expanded-missing-uranium-catalyst" }
             }
         elseif is_state_low_power then
             -- There's no API support for slowing the lab down during
