@@ -22,6 +22,7 @@ data:extend({ {
         maximum = 20,
         minimum = 0.25
     },
+    impact_category = "metal",
     module_slots = 4,
     allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
     crafting_categories = { "centrifuging", "uranium-expanded-uranium-forging" },
