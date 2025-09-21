@@ -3,11 +3,11 @@ local BASE_ANIMATION_SPEED = 0.32
 
 data:extend({ {
     type = "assembling-machine",
-    name = "uranium-expanded-uranium-forge",
-    icon = "__uranium-expanded__/graphics/icons/uranium-forge-icon.png",
+    name = "uranium-overhaul-uranium-forge",
+    icon = "__uranium-overhaul__/graphics/icons/uranium-forge-icon.png",
     icon_size = 64,
     flags = { "placeable-neutral", "player-creation" },
-    minable = { mining_time = 0.2, result = "uranium-expanded-uranium-forge" },
+    minable = { mining_time = 0.2, result = "uranium-overhaul-uranium-forge" },
     max_health = 350,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
@@ -35,7 +35,7 @@ data:extend({ {
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     module_slots = 4,
     allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
-    crafting_categories = { "centrifuging", "uranium-expanded-uranium-forging" },
+    crafting_categories = { "centrifuging", "uranium-overhaul-uranium-forging" },
     crafting_speed = 2.0,
     energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_second = 6 },
     energy_usage = "1MW",
@@ -47,7 +47,7 @@ data:extend({ {
                     animation_speed = BASE_ANIMATION_SPEED,
                     scale = 0.527,
                     filenames = {
-                        "__uranium-expanded__/graphics/entity/uranium-forge/uranium-forge-animation.png",
+                        "__uranium-overhaul__/graphics/entity/uranium-forge/uranium-forge-animation.png",
                     },
                     blend_mode = "normal",
                     width = 300,
@@ -62,7 +62,7 @@ data:extend({ {
                     animation_speed = BASE_ANIMATION_SPEED,
                     scale = 0.527,
                     filenames = {
-                        "__uranium-expanded__/graphics/entity/uranium-forge/uranium-forge-color1.png",
+                        "__uranium-overhaul__/graphics/entity/uranium-forge/uranium-forge-color1.png",
                     },
                     blend_mode = "normal",
                     width = 300,
@@ -77,7 +77,7 @@ data:extend({ {
                 {
                     scale = 0.527,
                     filenames = {
-                        "__uranium-expanded__/graphics/entity/uranium-forge/uranium-forge-shadow.png",
+                        "__uranium-overhaul__/graphics/entity/uranium-forge/uranium-forge-shadow.png",
                     },
                     blend_mode = "normal",
                     width = 675,
@@ -107,7 +107,7 @@ data:extend({ {
                             animation_speed = BASE_ANIMATION_SPEED,
                             scale = 0.527,
                             filenames = {
-                                "__uranium-expanded__/graphics/entity/uranium-forge/uranium-forge-emission1.png",
+                                "__uranium-overhaul__/graphics/entity/uranium-forge/uranium-forge-emission1.png",
                             },
                             blend_mode = "additive",
                             width = 300,
@@ -123,7 +123,7 @@ data:extend({ {
                             animation_speed = BASE_ANIMATION_SPEED,
                             scale = 0.527,
                             filenames = {
-                                "__uranium-expanded__/graphics/entity/uranium-forge/uranium-forge-emission2.png",
+                                "__uranium-overhaul__/graphics/entity/uranium-forge/uranium-forge-emission2.png",
                             },
                             blend_mode = "additive",
                             width = 300,

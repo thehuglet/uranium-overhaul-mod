@@ -24,7 +24,7 @@ function enable_lab(data)
 end
 
 script.on_event(defines.events.on_script_trigger_effect, function(event)
-    if event.effect_id ~= "uranium-expanded-uranium-lab-init" then return end
+    if event.effect_id ~= "uranium-overhaul-uranium-lab-init" then return end
 
     local lab = event.source_entity
     local surface = lab.surface
@@ -32,7 +32,7 @@ script.on_event(defines.events.on_script_trigger_effect, function(event)
 
     -- spawn the hidden electric interface
     local eei = surface.create_entity {
-        name = "uranium-expanded-nuclear-lab-eei",
+        name = "uranium-overhaul-nuclear-lab-eei",
         position = pos,
         force = lab.force,
         create_build_effect_smoke = false,
@@ -41,8 +41,8 @@ script.on_event(defines.events.on_script_trigger_effect, function(event)
     eei.energy = 1 * unit_multipliers.M
     local reg_id = script.register_on_object_destroyed(lab)
 
-    storage.uranium_expanded_nuclear_labs = storage.uranium_expanded_nuclear_labs or {}
-    storage.uranium_expanded_nuclear_labs[reg_id] = {
+    storage.uranium_overhaul_nuclear_labs = storage.uranium_overhaul_nuclear_labs or {}
+    storage.uranium_overhaul_nuclear_labs[reg_id] = {
         lab = lab,
         eei = eei,
         -- this exists to delay disabling the lab
@@ -52,22 +52,22 @@ script.on_event(defines.events.on_script_trigger_effect, function(event)
 end)
 
 script.on_event(defines.events.on_object_destroyed, function(event)
-    local data = storage.uranium_expanded_nuclear_labs[event.registration_number]
+    local data = storage.uranium_overhaul_nuclear_labs[event.registration_number]
     if not data then return end
 
     if data.eei.valid then
         data.eei.destroy()
     end
 
-    storage.uranium_expanded_nuclear_labs[event.registration_number] = nil
+    storage.uranium_overhaul_nuclear_labs[event.registration_number] = nil
 end)
 
 script.on_event(defines.events.on_tick, function(event)
-    if not storage.uranium_expanded_nuclear_labs then return end
+    if not storage.uranium_overhaul_nuclear_labs then return end
 
-    for reg_id, data in pairs(storage.uranium_expanded_nuclear_labs) do
+    for reg_id, data in pairs(storage.uranium_overhaul_nuclear_labs) do
         if not data then
-            storage.uranium_expanded_nuclear_labs[reg_id] = nil
+            storage.uranium_overhaul_nuclear_labs[reg_id] = nil
             return
         end
 
@@ -100,7 +100,7 @@ script.on_event(defines.events.on_tick, function(event)
 
             data.lab.custom_status = {
                 diode = defines.entity_status_diode.red,
-                label = { "entity-status.uranium-expanded-missing-uranium-catalyst" }
+                label = { "entity-status.uranium-overhaul-missing-uranium-catalyst" }
             }
         elseif is_state_low_power then
             -- There's no API support for slowing the lab down during

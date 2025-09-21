@@ -1,13 +1,13 @@
 data:extend({
     {
         type = "technology",
-        name = "uranium-expanded-uranium-forge",
-        icon = "__uranium-expanded__/graphics/technology/uranium-forge.png",
+        name = "uranium-overhaul-uranium-forge",
+        icon = "__uranium-overhaul__/graphics/technology/uranium-forge.png",
         icon_size = 320,
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "uranium-expanded-uranium-forge"
+                recipe = "uranium-overhaul-uranium-forge"
             },
         },
         research_trigger = {
@@ -19,21 +19,21 @@ data:extend({
     },
     {
         type = "technology",
-        name = "uranium-expanded-nuclear-lab",
-        icon = "__uranium-expanded__/graphics/technology/nuclear-lab.png",
+        name = "uranium-overhaul-nuclear-lab",
+        icon = "__uranium-overhaul__/graphics/technology/nuclear-lab.png",
         icon_size = 320,
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "uranium-expanded-nuclear-lab"
+                recipe = "uranium-overhaul-nuclear-lab"
             },
             {
                 type = "unlock-recipe",
-                recipe = "uranium-expanded-blank-catalyst"
+                recipe = "uranium-overhaul-blank-catalyst"
             },
             {
                 type = "unlock-recipe",
-                recipe = "uranium-expanded-uranium-catalyst"
+                recipe = "uranium-overhaul-uranium-catalyst"
             },
         },
         unit = {
@@ -47,6 +47,6 @@ data:extend({
             time = 30,
             count = 5000
         },
-        prerequisites = { "uranium-expanded-uranium-forge" },
+        prerequisites = { "uranium-overhaul-uranium-forge" },
     },
 })

@@ -1,8 +1,8 @@
 data:extend({
     {
         type = "electric-energy-interface",
-        name = "uranium-expanded-nuclear-lab-eei",
-        icon = "__uranium-expanded__/graphics/icons/nuclear-lab-icon.png",
+        name = "uranium-overhaul-nuclear-lab-eei",
+        icon = "__uranium-overhaul__/graphics/icons/nuclear-lab-icon.png",
         energy_usage = "0kW", -- This is 0 as this value is strictly controlled at runtime
         energy_source = {
             type = "electric",
@@ -21,7 +21,7 @@ data:extend({
         selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
         selectable_in_game = false,
         collision_mask = { layers = {} }, -- no collision
-        factoriopedia_alternative = "uranium-expanded-nuclear-lab",
+        factoriopedia_alternative = "uranium-overhaul-nuclear-lab",
         continuous_animation = false,
         gui_mode = "none",
     }

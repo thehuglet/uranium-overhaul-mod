@@ -2,14 +2,14 @@ local BASE_ANIMATION_SPEED = 0.32
 
 data:extend({ {
     type = "lab",
-    name = "uranium-expanded-nuclear-lab",
+    name = "uranium-overhaul-nuclear-lab",
     energy_usage = "2000kW",
     researching_speed = 1.5,
     module_slots = 2,
     science_pack_drain_rate_percent = 45,
     energy_source = {
         type = "burner",
-        fuel_categories = { "uranium-expanded-uranium-catalyst" },
+        fuel_categories = { "uranium-overhaul-uranium-catalyst" },
         burnt_inventory_size = 1,
         fuel_inventory_size = 1,
         effectivity = 0.1,
@@ -20,8 +20,8 @@ data:extend({ {
         }
     },
     -- custom_tooltip_fields = { { name = "testname", value = "testvalue" } },
-    icon = "__uranium-expanded__/graphics/icons/nuclear-lab-icon.png",
-    minable = { mining_time = 0.5, result = "uranium-expanded-nuclear-lab" },
+    icon = "__uranium-overhaul__/graphics/icons/nuclear-lab-icon.png",
+    minable = { mining_time = 0.5, result = "uranium-overhaul-nuclear-lab" },
     subgroup = "production-machine",
     inputs = {
         "automation-science-pack",
@@ -60,7 +60,7 @@ data:extend({ {
                 animation_speed = BASE_ANIMATION_SPEED,
                 scale = 0.4,
                 filenames = {
-                    "__uranium-expanded__/graphics/entity/nuclear-lab/nuclear-lab-hr-animation-1.png",
+                    "__uranium-overhaul__/graphics/entity/nuclear-lab/nuclear-lab-hr-animation-1.png",
                 },
                 blend_mode = "normal",
                 width = 400,
@@ -75,7 +75,7 @@ data:extend({ {
                 animation_speed = BASE_ANIMATION_SPEED,
                 scale = 0.4,
                 filenames = {
-                    "__uranium-expanded__/graphics/entity/nuclear-lab/nuclear-lab-hr-emission-1.png",
+                    "__uranium-overhaul__/graphics/entity/nuclear-lab/nuclear-lab-hr-emission-1.png",
                 },
                 blend_mode = "additive-soft",
                 width = 400,
@@ -90,7 +90,7 @@ data:extend({ {
             {
                 scale = 0.4,
                 filenames = {
-                    "__uranium-expanded__/graphics/entity/nuclear-lab/nuclear-lab-hr-shadow.png",
+                    "__uranium-overhaul__/graphics/entity/nuclear-lab/nuclear-lab-hr-shadow.png",
                 },
                 blend_mode = "normal",
                 width = 800,
@@ -111,7 +111,7 @@ data:extend({ {
                 animation_speed = BASE_ANIMATION_SPEED,
                 scale = 0.4,
                 filenames = {
-                    "__uranium-expanded__/graphics/entity/nuclear-lab/nuclear-lab-hr-animation-1.png",
+                    "__uranium-overhaul__/graphics/entity/nuclear-lab/nuclear-lab-hr-animation-1.png",
                 },
                 blend_mode = "normal",
                 width = 400,
@@ -125,7 +125,7 @@ data:extend({ {
             {
                 scale = 0.4,
                 filenames = {
-                    "__uranium-expanded__/graphics/entity/nuclear-lab/nuclear-lab-hr-shadow.png",
+                    "__uranium-overhaul__/graphics/entity/nuclear-lab/nuclear-lab-hr-shadow.png",
                 },
                 blend_mode = "normal",
                 width = 800,

@@ -1,6 +1,6 @@
 data:extend({
     {
         type = "fuel-category",
-        name = "uranium-expanded-uranium-catalyst"
+        name = "uranium-overhaul-uranium-catalyst"
     }
 })

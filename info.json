@@ -1,7 +1,7 @@
 {
-    "name": "uranium-expanded",
-    "title": "Uranium Expanded",
-    "description": "This mod expands upon the current uranium processes.",
+    "name": "uranium-overhaul",
+    "title": "Uranium Overhaul",
+    "description": "This mod rebalances and expands upon the vanilla uranium mechanics.",
     "version": "0.1.0",
     "author": "thehuglet",
     "factorio_version": "2.0",
