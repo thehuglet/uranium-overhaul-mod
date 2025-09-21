@@ -19,7 +19,7 @@ data:extend({ {
             color = { 0.3, 1.0, 0.3, 1.0 }
         }
     },
-    custom_tooltip_fields = { { name = "testname", value = "testvalue" } },
+    -- custom_tooltip_fields = { { name = "testname", value = "testvalue" } },
     icon = "__uranium-expanded__/graphics/icons/nuclear-lab-icon.png",
     minable = { mining_time = 0.5, result = "uranium-expanded-nuclear-lab" },
     subgroup = "production-machine",
