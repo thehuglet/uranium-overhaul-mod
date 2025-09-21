@@ -42,7 +42,15 @@ data:extend({ {
     collision_box = { { -2.2, -2.2 }, { 2.2, 2.2 } },
     selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
     max_health = 350,
-    impact_category = "metal",
+    impact_category = "metal-large",
+    open_sound = { filename = "__base__/sound/open-close/nuclear-open.ogg", volume = 0.8 },
+    close_sound = { filename = "__base__/sound/open-close/nuclear-close.ogg", volume = 0.8 },
+    working_sound = {
+        sound = sound_variations("__base__/sound/nuclear-reactor", 2, 0.55, volume_multiplier("main-menu", 0.8)),
+        max_sounds_per_prototype = 3,
+        fade_in_ticks = 4,
+        fade_out_ticks = 20
+    },
     icon_draw_specification = { shift = { 0, -0.3 } },
     corpse = "big-remnants",
     dying_explosion = "big-explosion",

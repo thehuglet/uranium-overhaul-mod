@@ -1,3 +1,4 @@
+local sounds = require("__base__.prototypes.entity.sounds")
 local BASE_ANIMATION_SPEED = 0.32
 
 data:extend({ {
@@ -22,7 +23,16 @@ data:extend({ {
         maximum = 20,
         minimum = 0.25
     },
-    impact_category = "metal",
+    open_sound = sounds.machine_open,
+    close_sound = sounds.machine_close,
+    impact_category = "metal-large",
+    working_sound =
+    {
+        sound = sound_variations("__base__/sound/centrifuge", 3, 0.3, volume_multiplier("main-menu", 1.5)),
+        fade_in_ticks = 4,
+        fade_out_ticks = 20
+    },
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     module_slots = 4,
     allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
     crafting_categories = { "centrifuging", "uranium-expanded-uranium-forging" },

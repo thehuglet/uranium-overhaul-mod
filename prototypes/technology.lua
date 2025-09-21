@@ -3,7 +3,7 @@ data:extend({
         type = "technology",
         name = "uranium-expanded-uranium-forge",
         icon = "__uranium-expanded__/graphics/technology/uranium-forge.png",
-        icon_size = 640,
+        icon_size = 320,
         effects = {
             {
                 type = "unlock-recipe",
@@ -21,7 +21,7 @@ data:extend({
         type = "technology",
         name = "uranium-expanded-nuclear-lab",
         icon = "__uranium-expanded__/graphics/technology/nuclear-lab.png",
-        icon_size = 640,
+        icon_size = 320,
         effects = {
             {
                 type = "unlock-recipe",
